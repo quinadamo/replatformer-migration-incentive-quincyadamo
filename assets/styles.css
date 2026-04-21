@@ -726,7 +726,9 @@ body.has-proto-chrome { padding-top: 38px; }
 
 .fb__post-image {
   margin: 0 -16px;
-  background: linear-gradient(140deg, #0a0a0a 0%, #12281e 55%, #003d2d 100%);
+  background:
+    linear-gradient(90deg, rgba(5, 12, 8, 0.92) 0%, rgba(5, 12, 8, 0.72) 45%, rgba(5, 12, 8, 0.25) 100%),
+    url("assets/merchant-lifestyle-backdrop.png") center/cover no-repeat;
   aspect-ratio: 1.91/1;
   display: flex;
   flex-direction: column;
@@ -741,22 +743,8 @@ body.has-proto-chrome { padding-top: 38px; }
 .fb__post-image::before {
   content: "";
   position: absolute;
-  top: -40%;
-  right: -20%;
-  width: 70%;
-  height: 140%;
-  background: radial-gradient(circle, rgba(0, 200, 120, 0.22), transparent 65%);
-  pointer-events: none;
-}
-
-.fb__post-image::after {
-  content: "";
-  position: absolute;
-  bottom: -30%;
-  left: -10%;
-  width: 50%;
-  height: 100%;
-  background: radial-gradient(circle, rgba(0, 128, 96, 0.15), transparent 70%);
+  inset: 0;
+  background: radial-gradient(ellipse at 25% 50%, rgba(0, 128, 96, 0.2), transparent 55%);
   pointer-events: none;
 }
 
@@ -828,19 +816,60 @@ body.has-proto-chrome { padding-top: 38px; }
 }
 
 .fb__post-image-headline {
-  font-size: 44px;
+  font-size: 38px;
   font-weight: 800;
-  line-height: 1.02;
-  letter-spacing: -0.028em;
-  margin-bottom: 12px;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  margin-bottom: 14px;
   color: #fff;
 }
 
+.fb__post-image-price {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.fb__post-image-price-hero {
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  color: #80e6b8;
+  text-shadow: 0 2px 20px rgba(0, 128, 96, 0.3);
+}
+
+.fb__post-image-price-hero sup {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0;
+  vertical-align: baseline;
+  margin-left: 2px;
+}
+
+.fb__post-image-price-then {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+}
+
+.fb__post-image-price-then strong {
+  color: #fff;
+  font-weight: 800;
+  font-size: 15px;
+  display: block;
+}
+
 .fb__post-image-sub {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.68);
   line-height: 1.4;
-  max-width: 90%;
+  max-width: 85%;
 }
 
 .fb__post-image-badge {
