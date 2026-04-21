@@ -728,7 +728,7 @@ body.has-proto-chrome { padding-top: 38px; }
   margin: 0 -16px;
   background:
     linear-gradient(90deg, rgba(5, 12, 8, 0.92) 0%, rgba(5, 12, 8, 0.72) 45%, rgba(5, 12, 8, 0.25) 100%),
-    url("assets/merchant-lifestyle-backdrop.png") center/cover no-repeat;
+    url("merchant-lifestyle-backdrop.png") center/cover no-repeat;
   aspect-ratio: 1.91/1;
   display: flex;
   flex-direction: column;
