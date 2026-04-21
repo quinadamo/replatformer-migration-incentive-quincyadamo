@@ -34,7 +34,7 @@ Squarespace-specific positioning on every surface. Core offer:
 - **$10/mo Basic your first year** (vs $27/mo Squarespace Commerce)
 - **1-click migration** (products, images, brand, SEO redirects)
 - **3-month $1 paid trial** layered on top
-- **1% GMV Rewards** on Shopify Payments sales, capped at $10K
+- **1% GMV Rewards** on Shopify Payments sales, capped at $15K
 
 ## Local development
 
