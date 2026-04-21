@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claim your store · Shopify</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <section class="auth">
+    <div class="auth__form-side">
+      <div class="auth__form-wrap">
+        <div class="auth__form-logo">
+          <span class="shop-nav__logo-mark">S</span>
+          Shopify
+        </div>
+
+        <div class="auth__form-eyebrow">Last step · 30 seconds</div>
+        <h1 class="auth__form-title">Claim your store</h1>
+        <p class="auth__form-sub">
+          Your Shopify store is ready at <strong>firehouse-foods.myshopify.com</strong>. Create an account to take ownership.
+        </p>
+
+        <form onsubmit="event.preventDefault(); window.location.href='admin.html';">
+          <div class="auth__field">
+            <label class="auth__label">Email</label>
+            <input type="email" class="auth__input" value="chris@firehousefoodz.com">
+          </div>
+
+          <div class="auth__field">
+            <label class="auth__label">Password</label>
+            <input type="password" class="auth__input" value="••••••••••••" placeholder="Create a password">
+          </div>
+
+          <div class="auth__field">
+            <label class="auth__label">Store name</label>
+            <input type="text" class="auth__input" value="Firehouse Foods" readonly>
+          </div>
+
+          <label class="auth__checkbox">
+            <input type="checkbox" checked>
+            <span>
+              I agree to Shopify's <a href="#" style="color: var(--shopify-green); text-decoration: underline;">Terms of Service</a> and <a href="#" style="color: var(--shopify-green); text-decoration: underline;">Privacy Policy</a>, and to receiving the Squarespace migration offer below.
+            </span>
+          </label>
+
+          <button type="submit" class="btn btn--primary btn--block btn--lg">
+            Claim your store →
+          </button>
+
+          <div class="auth__fine">
+            Already have a Shopify account? <a href="#">Log in instead</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <aside class="auth__wow">
+      <div class="auth__wow-header">
+        <div class="auth__wow-eyebrow">
+          <span style="width:6px; height:6px; border-radius:50%; background: var(--shopify-green);"></span>
+          Ready to claim
+        </div>
+        <h2 class="auth__wow-title">Here's what you're claiming</h2>
+        <p class="auth__wow-sub">Your Shopify store is live at a temporary URL. Signing up transfers ownership to you.</p>
+      </div>
+
+      <div class="auth__wow-preview">
+        <div class="auth__wow-browser-bar">
+          <div class="auth__wow-browser-dots">
+            <span class="auth__wow-browser-dot" style="background: #ff5f57;"></span>
+            <span class="auth__wow-browser-dot" style="background: #ffbd2e;"></span>
+            <span class="auth__wow-browser-dot" style="background: #28ca41;"></span>
+          </div>
+          <div class="auth__wow-browser-url">🔒 firehouse-foods.myshopify.com</div>
+        </div>
+        <div style="background: #faf7f0;">
+          <div class="preview__after-nav">
+            <div class="preview__after-logo">FIREHOUSE</div>
+            <div class="preview__after-nav-links">
+              <span>Shop</span>
+              <span>Story</span>
+              <span>🛒</span>
+            </div>
+          </div>
+          <div class="preview__after-hero" style="padding: 32px 20px;">
+            <div class="preview__after-hero-eyebrow">Born in Boise, served everywhere</div>
+            <div class="preview__after-hero-title" style="font-size: 26px;">Salsa macha<br>for people who<br>actually cook.</div>
+            <p class="preview__after-hero-sub" style="margin-bottom: 14px;">
+              Small-batch, slow-toasted, layered with pepitas and chiles.
+            </p>
+            <a class="preview__after-hero-btn">Shop the lineup</a>
+          </div>
+          <div class="preview__after-products" style="padding: 16px;">
+            <div class="preview__after-product">
+              <div class="preview__after-product-img preview__after-product-img--verde" style="font-size: 20px;">V</div>
+              <div class="preview__after-product-body">
+                <div class="preview__after-product-name">Verde Pistachio</div>
+                <div class="preview__after-product-price">$14</div>
+              </div>
+            </div>
+            <div class="preview__after-product">
+              <div class="preview__after-product-img preview__after-product-img--street" style="font-size: 20px;">S</div>
+              <div class="preview__after-product-body">
+                <div class="preview__after-product-name">Street Taco</div>
+                <div class="preview__after-product-price">$12</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="auth__wow-stats-row">
+        <div class="auth__wow-stat">
+          <div class="auth__wow-stat-value">$1</div>
+          <div class="auth__wow-stat-label">per mo · 3 mos</div>
+        </div>
+        <div class="auth__wow-stat">
+          <div class="auth__wow-stat-value">$10</div>
+          <div class="auth__wow-stat-label">per mo · yr 1</div>
+        </div>
+        <div class="auth__wow-stat">
+          <div class="auth__wow-stat-value">$20</div>
+          <div class="auth__wow-stat-label">domain credit</div>
+        </div>
+        <div class="auth__wow-stat">
+          <div class="auth__wow-stat-value">1%</div>
+          <div class="auth__wow-stat-label">back on sales</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

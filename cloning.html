@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Migrating your shop... · Shopify</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <nav class="shop-nav">
+    <a class="shop-nav__logo">
+      <span class="shop-nav__logo-mark">S</span>
+      Shopify
+    </a>
+    <div class="shop-nav__links" style="opacity: 0.7;">
+      <span>Migrating <strong>firehousefoodz.com</strong></span>
+    </div>
+    <div class="shop-nav__actions"></div>
+  </nav>
+
+  <section class="cloning">
+    <div class="cloning__hero">
+      <div class="cloning__preview-card">
+        <div class="cloning__preview-visual">
+          <div class="cloning__preview-visual-inner">
+            <div class="cloning__preview-visual-eyebrow">Born in Boise</div>
+            <div class="cloning__preview-visual-name">FIREHOUSE FOODS</div>
+            <div class="cloning__preview-visual-sub">Salsa macha · 4 SKUs</div>
+          </div>
+        </div>
+        <div>
+          <div class="cloning__status-eyebrow">
+            <span class="cloning__spinner"></span>
+            1-click migration in progress
+          </div>
+          <h1 class="cloning__status-title">Building your Shopify store</h1>
+          <p class="cloning__status-sub">
+            Usually takes 2-3 minutes. While you wait, answer a few quick questions so Sidekick can pre-configure your admin.
+          </p>
+
+          <ul class="cloning__steps">
+            <li class="cloning__step cloning__step--pending" data-cloning-step data-duration="1800">
+              <span class="cloning__step-icon">1</span>
+              <span class="cloning__step-label">Scanning <strong>firehousefoodz.com</strong></span>
+              <span class="cloning__step-detail">Brand + products</span>
+            </li>
+            <li class="cloning__step cloning__step--pending" data-cloning-step data-duration="2000">
+              <span class="cloning__step-icon">2</span>
+              <span class="cloning__step-label">Importing 4 SKUs</span>
+              <span class="cloning__step-detail">Verde, Street Taco, Coffee, Trio</span>
+            </li>
+            <li class="cloning__step cloning__step--pending" data-cloning-step data-duration="2400">
+              <span class="cloning__step-icon">3</span>
+              <span class="cloning__step-label">Matching a Horizon theme variant</span>
+              <span class="cloning__step-detail">Heritage · warm earth tones</span>
+            </li>
+            <li class="cloning__step cloning__step--pending" data-cloning-step data-duration="2200">
+              <span class="cloning__step-icon">4</span>
+              <span class="cloning__step-label">Populating imagery &amp; copy</span>
+              <span class="cloning__step-detail">28 images, hero + product + lifestyle</span>
+            </li>
+            <li class="cloning__step cloning__step--pending" data-cloning-step data-duration="1600">
+              <span class="cloning__step-icon">5</span>
+              <span class="cloning__step-label">Generating SEO redirects</span>
+              <span class="cloning__step-detail">12 URLs preserved</span>
+            </li>
+            <li class="cloning__step cloning__step--pending" data-cloning-step data-duration="1400">
+              <span class="cloning__step-icon">6</span>
+              <span class="cloning__step-label">Final QA pass</span>
+              <span class="cloning__step-detail">Mobile + cart + checkout</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- One-at-a-time SQ stage -->
+    <div class="sq-stage" id="sq-stage">
+      <div class="sq-stage__header">
+        <div class="sq-stage__header-text">
+          <div class="sq-stage__eyebrow">A few quick questions · while you wait</div>
+          <div class="sq-stage__helper">Your answers help Sidekick pre-configure your admin. We won't pester you for these later.</div>
+        </div>
+        <div class="sq-stage__progress-dots" data-sq-dots></div>
+      </div>
+
+      <div class="sq-stage__body">
+        <div data-sq-slide></div>
+      </div>
+
+      <div class="sq-stage__footer">
+        <span class="sq-stage__navlink is-disabled" data-sq-prev>← Previous</span>
+        <span class="sq-stage__count" data-sq-count></span>
+        <span class="sq-stage__navlink" data-sq-skip>Skip</span>
+      </div>
+    </div>
+
+    <div class="cloning__cta-bar" style="max-width: 960px; margin: 28px auto 0;">
+      <div class="cloning__cta-note">
+        <strong>Almost there.</strong> Your Shopify store is being built in the background. The button below will unlock when it's ready.
+      </div>
+      <button id="cloning-continue" class="btn btn--primary btn--lg" disabled style="opacity: 0.6;">
+        Building your store...
+      </button>
+    </div>
+  </section>
+
+  <script>
+    window.SQ_QUESTIONS = [
+      {
+        id: 'email',
+        emoji: '📧',
+        lead: 'Email marketing',
+        question: 'Who handles your email marketing today?',
+        options: [
+          { key: 'mailchimp', emoji: '🐵', label: 'Mailchimp', sub: "I'll auto-import your list" },
+          { key: 'klaviyo', emoji: '💌', label: 'Klaviyo', sub: 'Integration ready, one-click connect' },
+          { key: 'sqsp', emoji: '⬛', label: 'Squarespace native email', sub: "I'll migrate your subscribers over" },
+          { key: 'none', emoji: '🤷', label: 'Something else, or nothing yet', sub: "No problem, I'll help you pick one later" }
+        ]
+      },
+      {
+        id: 'channels',
+        emoji: '🛒',
+        lead: 'Where you sell',
+        question: 'Where do you sell, beyond your website?',
+        options: [
+          { key: 'web-only', emoji: '💻', label: 'Just my website, for now', sub: "I'll focus your setup on online-first" },
+          { key: 'in-person', emoji: '🏪', label: 'In-person (markets, retail)', sub: "I'll recommend Shopify POS setup" },
+          { key: 'marketplaces', emoji: '📦', label: 'Online marketplaces (Etsy, Amazon)', sub: 'Unified inventory is your friend' },
+          { key: 'all', emoji: '🌎', label: 'All of the above, and more', sub: 'Multi-channel dashboard ready for you' }
+        ]
+      },
+      {
+        id: 'domain',
+        emoji: '🌐',
+        lead: 'Your domain',
+        question: "Where's firehousefoodz.com registered?",
+        options: [
+          { key: 'sqsp', emoji: '⬛', label: 'Squarespace', sub: "I'll transfer it using your $20 credit" },
+          { key: 'godaddy', emoji: '🌐', label: 'GoDaddy', sub: "I'll walk you through DNS updates" },
+          { key: 'other', emoji: '🏷️', label: 'Namecheap, Google, or other', sub: 'Most registrars take ~15 min to transfer' },
+          { key: 'unsure', emoji: '❓', label: 'Not sure, honestly', sub: "I'll detect it for you from your URL" }
+        ]
+      },
+      {
+        id: 'goal',
+        emoji: '🎯',
+        lead: 'Your #1 goal',
+        question: "What's the one thing you want from your next online store?",
+        options: [
+          { key: 'sales', emoji: '📈', label: 'Grow my sales', sub: "I'll surface sales-first playbooks" },
+          { key: 'checkout', emoji: '⚡', label: 'Faster checkout for customers', sub: 'Shop Pay is 4x faster, already live' },
+          { key: 'costs', emoji: '🧾', label: 'Stop paying for extra apps', sub: "I'll audit what you need vs what's built-in" },
+          { key: 'omnichannel', emoji: '🏬', label: 'Connect online + in-person', sub: 'POS + online inventory in one admin' }
+        ]
+      }
+    ];
+  </script>
+  <script src="assets/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const cta = document.getElementById('cloning-continue');
+      if (cta) {
+        cta.addEventListener('click', () => {
+          if (cta.hasAttribute('disabled')) return;
+          window.location.href = 'preview.html';
+        });
+      }
+    });
+  </script>
+</body>
+</html>

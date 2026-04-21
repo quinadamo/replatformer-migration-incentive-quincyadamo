@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inbox · Chris @ Firehouse Foods</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <section class="gmail">
+    <div class="gmail__topbar">
+      <div class="gmail__logo">
+        <svg class="gmail__logo-icon" viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#4285f4" d="M1.5 0h21A1.5 1.5 0 0124 1.5v15a1.5 1.5 0 01-1.5 1.5H1.5A1.5 1.5 0 010 16.5v-15A1.5 1.5 0 011.5 0z"/>
+          <path fill="#fff" d="M2 3.5v13h20v-13L12 10 2 3.5z"/>
+          <path fill="#ea4335" d="M0 1.5A1.5 1.5 0 011.5 0h.5l10 6.5L22 0h.5A1.5 1.5 0 0124 1.5V3L12 11 0 3V1.5z"/>
+        </svg>
+        Gmail
+      </div>
+      <div class="gmail__search">Search mail</div>
+    </div>
+
+    <div class="gmail__body">
+      <aside class="gmail__sidebar">
+        <button class="gmail__compose">✎ Compose</button>
+        <div class="gmail__folder gmail__folder--active">
+          <span>📥</span> Inbox <span class="gmail__folder-count">24</span>
+        </div>
+        <div class="gmail__folder"><span>⭐</span> Starred</div>
+        <div class="gmail__folder"><span>⏰</span> Snoozed</div>
+        <div class="gmail__folder"><span>📤</span> Sent</div>
+        <div class="gmail__folder"><span>📝</span> Drafts</div>
+        <div class="gmail__folder"><span>🏷️</span> Customers</div>
+        <div class="gmail__folder"><span>🏷️</span> Suppliers</div>
+      </aside>
+
+      <div class="gmail__main" id="inbox">
+        <a href="#open" onclick="openEmail(event)" class="gmail__list-item gmail__list-item--unread gmail__list-item--highlight">
+          <span class="gmail__star gmail__star--active">★</span>
+          <span class="gmail__sender">Shopify Growth Team</span>
+          <div class="gmail__preview">
+            <span class="gmail__subject">Chris, 1-click migration to Shopify + $10/mo year one</span>
+            <span class="gmail__snippet">— Move firehousefoodz.com in minutes. Your first 3 months are $1/mo, domain transfer on us...</span>
+          </div>
+          <span class="gmail__time">10:42 AM</span>
+        </a>
+        <div class="gmail__list-item gmail__list-item--unread">
+          <span class="gmail__star">☆</span>
+          <span class="gmail__sender">Boise Farmers Market</span>
+          <div class="gmail__preview">
+            <span class="gmail__subject">Booth confirmation for Saturday</span>
+            <span class="gmail__snippet">— Reminder: set up starts at 7am, we have you at stall 14 by the salsa...</span>
+          </div>
+          <span class="gmail__time">9:18 AM</span>
+        </div>
+        <div class="gmail__list-item gmail__list-item--unread">
+          <span class="gmail__star">☆</span>
+          <span class="gmail__sender">Squarespace</span>
+          <div class="gmail__preview">
+            <span class="gmail__subject">Your annual plan renews in 14 days</span>
+            <span class="gmail__snippet">— Your Commerce plan ($27/mo) will auto-renew on May 5. Update payment method...</span>
+          </div>
+          <span class="gmail__time">Yesterday</span>
+        </div>
+        <div class="gmail__list-item">
+          <span class="gmail__star">☆</span>
+          <span class="gmail__sender">Mailchimp</span>
+          <div class="gmail__preview">
+            <span class="gmail__subject">Your April campaign recap</span>
+            <span class="gmail__snippet">— 2,140 opens · 184 clicks · 12 unsubscribes. See how your list is growing...</span>
+          </div>
+          <span class="gmail__time">Yesterday</span>
+        </div>
+        <div class="gmail__list-item">
+          <span class="gmail__star">☆</span>
+          <span class="gmail__sender">Stripe</span>
+          <div class="gmail__preview">
+            <span class="gmail__subject">March payout summary</span>
+            <span class="gmail__snippet">— $4,120 paid out. Processing fees: $127. View full breakdown...</span>
+          </div>
+          <span class="gmail__time">Apr 17</span>
+        </div>
+        <div class="gmail__list-item">
+          <span class="gmail__star">☆</span>
+          <span class="gmail__sender">Shipstation</span>
+          <div class="gmail__preview">
+            <span class="gmail__subject">4 orders awaiting fulfillment</span>
+            <span class="gmail__snippet">— Orders #1284-1287 need labels printed before the 3pm cutoff.</span>
+          </div>
+          <span class="gmail__time">Apr 17</span>
+        </div>
+      </div>
+
+      <div class="gmail__email hidden" id="opened">
+        <h1 class="gmail__email-subject">Chris, 1-click migration to Shopify + $10/mo year one</h1>
+
+        <div class="gmail__email-header">
+          <div class="gmail__email-avatar">S</div>
+          <div class="gmail__email-meta">
+            <div class="gmail__email-from">Shopify Growth Team &lt;hello@shopify.com&gt;</div>
+            <div class="gmail__email-to">to chris@firehousefoodz.com</div>
+          </div>
+          <div class="gmail__email-date">10:42 AM (2 min ago)</div>
+        </div>
+
+        <div class="gmail__email-body">
+          <p>Hi Chris,</p>
+
+          <p>We've been following what you're building at <strong>firehousefoodz.com</strong>. The Verde Pistachio and Street Taco Peanut lineup is sharp, and the farmers-market-to-online move is exactly the kind of story Shopify was built for.</p>
+
+          <p>Your Squarespace Commerce plan renews in 14 days, so before you pay for another year, we want to make an exclusive offer. <strong>1-click migration to Shopify at $10/mo for your first year.</strong></p>
+
+          <div class="gmail__email-offer">
+            <div style="font-size: 14px; font-weight: 700; color: var(--shopify-green-dark); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px;">Squarespace Migration Offer</div>
+            <div style="font-size: 24px; font-weight: 800; letter-spacing: -0.02em; color: var(--ink-primary); margin-bottom: 4px;">Preview your shop in 3 minutes</div>
+            <div style="font-size: 13px; color: var(--ink-secondary); margin-bottom: 4px;">Drop your URL, we handle the migration automatically</div>
+            <ul class="gmail__email-offer-list">
+              <li class="gmail__email-offer-item">
+                <span class="gmail__email-offer-check">✓</span>
+                <div>
+                  <div class="gmail__email-offer-title">1-click migration</div>
+                  <div class="gmail__email-offer-sub">Products, images, brand, SEO redirects, all handled</div>
+                </div>
+              </li>
+              <li class="gmail__email-offer-item">
+                <span class="gmail__email-offer-check">$</span>
+                <div>
+                  <div class="gmail__email-offer-title">$1/mo for your first 3 months</div>
+                  <div class="gmail__email-offer-sub">Paid trial, then $10/mo for the rest of year one</div>
+                </div>
+              </li>
+              <li class="gmail__email-offer-item">
+                <span class="gmail__email-offer-check">🌐</span>
+                <div>
+                  <div class="gmail__email-offer-title">Free domain credit ($20)</div>
+                  <div class="gmail__email-offer-sub">Covers the cost of transferring firehousefoodz.com</div>
+                </div>
+              </li>
+              <li class="gmail__email-offer-item">
+                <span class="gmail__email-offer-check">%</span>
+                <div>
+                  <div class="gmail__email-offer-title">1% back on every sale</div>
+                  <div class="gmail__email-offer-sub">On Shopify Payments GMV, up to $10K in credits year one</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <p>Year one on Shopify with this offer: <strong>$93 total</strong>. Year one on Squarespace Commerce: <strong>$324</strong>. Plus the domain credit and GMV rewards on top.</p>
+
+          <p>Preview takes 3 minutes. No credit card, no signup. If you like what you see, you claim it.</p>
+
+          <div class="gmail__email-cta">
+            <a href="landing.html" class="btn btn--primary btn--lg">Preview my shop on Shopify →</a>
+          </div>
+
+          <p>If this isn't for you, no worries. Delete this email. We won't follow up.</p>
+
+          <div class="gmail__email-signature">
+            Ellie Chen<br>
+            Growth, Shopify Replatformer Team<br>
+            <small style="color: var(--ink-tertiary);">P.S. The preview is a real, working Shopify store, populated with your products and branding. You can click around before deciding anything.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/script.js"></script>
+  <script>
+    function openEmail(e) {
+      e.preventDefault();
+      document.getElementById('inbox').classList.add('hidden');
+      document.getElementById('opened').classList.remove('hidden');
+      window.scrollTo(0, 0);
+    }
+  </script>
+</body>
+</html>
