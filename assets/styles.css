@@ -726,66 +726,155 @@ body.has-proto-chrome { padding-top: 38px; }
 
 .fb__post-image {
   margin: 0 -16px;
-  background: linear-gradient(135deg, #008060 0%, #00a676 50%, #004c3f 100%);
+  background: linear-gradient(140deg, #0a0a0a 0%, #12281e 55%, #003d2d 100%);
   aspect-ratio: 1.91/1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
   color: #fff;
-  padding: 36px;
+  padding: 28px 32px;
   overflow: hidden;
 }
 
 .fb__post-image::before {
   content: "";
   position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.15), transparent 60%);
+  top: -40%;
+  right: -20%;
+  width: 70%;
+  height: 140%;
+  background: radial-gradient(circle, rgba(0, 200, 120, 0.22), transparent 65%);
+  pointer-events: none;
 }
 
-.fb__post-image-content { position: relative; z-index: 2; text-align: left; max-width: 75%; }
+.fb__post-image::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 50%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 128, 96, 0.15), transparent 70%);
+  pointer-events: none;
+}
+
+.fb__post-image-brand {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  z-index: 3;
+}
+
+.fb__post-image-brand-bag {
+  width: 22px;
+  height: 22px;
+  background: var(--shopify-green);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, serif;
+  font-weight: 900;
+  font-size: 14px;
+  color: #fff;
+}
+
+.fb__post-image-brand-word {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.fb__post-image-content {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  max-width: 68%;
+  margin-right: auto;
+  margin-top: 24px;
+}
 
 .fb__post-image-eyebrow {
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.18);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   backdrop-filter: blur(8px);
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: 999px;
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+  color: #80e6b8;
+}
+
+.fb__post-image-eyebrow::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #80e6b8;
+  box-shadow: 0 0 6px rgba(128, 230, 184, 0.8);
 }
 
 .fb__post-image-headline {
-  font-size: 32px;
+  font-size: 44px;
   font-weight: 800;
-  line-height: 1.08;
-  letter-spacing: -0.02em;
-  margin-bottom: 10px;
+  line-height: 1.02;
+  letter-spacing: -0.028em;
+  margin-bottom: 12px;
+  color: #fff;
 }
 
 .fb__post-image-sub {
-  font-size: 15px;
-  opacity: 0.95;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.78);
   line-height: 1.4;
+  max-width: 90%;
 }
 
 .fb__post-image-badge {
   position: absolute;
   top: 18px;
   right: 18px;
-  background: #fff;
-  color: var(--shopify-green);
-  padding: 7px 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 5px 10px;
   border-radius: 999px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  z-index: 3;
+}
+
+.fb__post-image-cta {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  color: var(--ink-primary);
+  padding: 9px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  z-index: 3;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .fb__post-cta {
